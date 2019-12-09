@@ -26,7 +26,7 @@ describe('do your paths work?', () => {
     return request(app)
       .get('/blue')
       .then(res => {
-        expect(res.text).toEqual('blue');
+        expect(res.text).toEqual('<h1>blue</h1>');
       });
   });
 
@@ -34,7 +34,7 @@ describe('do your paths work?', () => {
     return request(app)
       .get('/green')
       .then(res => {
-        expect(res.text).toEqual('green');
+        expect(res.text).toEqual('<h1>green</h1>');
       });
   });
 
@@ -42,7 +42,7 @@ describe('do your paths work?', () => {
     return request(app)
       .get('/red')
       .then(res => {
-        expect(res.text).toEqual('red');
+        expect(res.text).toEqual('<h1>red</h1>');
       });
   });
 });
